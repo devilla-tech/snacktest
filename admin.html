@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dulce Rosa | Administración</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+
+<body data-page="admin">
+
+<header>
+  <h1>📊 Dulce Rosa <span class="sub">| Administración</span></h1>
+
+  <nav class="links">
+    <a href="/caja.html">🧾 Caja</a>
+    <a href="/cocina.html">👩‍🍳 Cocina</a>
+    <a class="active" href="/admin.html">📊 Administrador</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <h2>Resumen del día 💗</h2>
+    <p>
+      Consulta las ventas y administra
+      los productos de tu negocio.
+    </p>
+  </section>
+
+  <div class="stats">
+
+    <div class="stat">
+      💰 Ventas de hoy
+      <b id="sales">$0.00</b>
+    </div>
+
+    <div class="stat">
+      🧾 Pedidos de hoy
+      <b id="count">0</b>
+    </div>
+
+    <div class="stat">
+      👩‍🍳 Por preparar
+      <b id="pending">0</b>
+    </div>
+
+    <div class="stat">
+      💵 Ventas en efectivo
+      <b id="cash">$0.00</b>
+    </div>
+
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <h2>Ventas registradas hoy</h2>
+
+      <button id="export" class="secondary">
+        ⬇ Exportar ventas CSV
+      </button>
+    </div>
+
+    <p class="sub" id="methods"></p>
+
+    <div id="recent"></div>
+  </div>
+
+  <div class="admin-grid">
+
+    <section class="card">
+      <h2>➕ Agregar producto</h2>
+
+      <form id="productForm">
+
+        <label>Nombre</label>
+        <input name="name" required maxlength="70"
+          placeholder="Fresas con crema">
+
+        <label>Precio (MXN)</label>
+        <input name="price" type="number"
+          required min="0.01" step="0.01">
+
+        <label>Categoría</label>
+        <input name="category" required maxlength="40"
+          placeholder="Postres">
+
+        <label>Emoji</label>
+        <input name="emoji" maxlength="8"
+          placeholder="🍓">
+
+        <button class="btn full" type="submit">
+          Agregar producto
+        </button>
+
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>📦 Productos del negocio</h2>
+      <div id="adminProducts"></div>
+    </section>
+
+  </div>
+
+  <p class="small">
+    Demostración sin usuarios ni permisos.
+    Antes de usarla comercialmente es necesario
+    proteger el panel con autenticación.
+  </p>
+
+</main>
+
+<div id="toast" class="toast"></div>
+
+</body>
+</html>

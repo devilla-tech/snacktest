@@ -1,0 +1,151 @@
+{
+  "products": [
+    {
+      "id": "p1",
+      "name": "Fresas con crema",
+      "category": "Postres",
+      "price": 85,
+      "emoji": "🍓",
+      "active": true
+    },
+    {
+      "id": "p2",
+      "name": "Mini hotcakes",
+      "category": "Postres",
+      "price": 90,
+      "emoji": "🥞",
+      "active": true
+    },
+    {
+      "id": "p3",
+      "name": "Cheesecake",
+      "category": "Postres",
+      "price": 75,
+      "emoji": "🍰",
+      "active": true
+    },
+    {
+      "id": "p4",
+      "name": "Brownie con nieve",
+      "category": "Postres",
+      "price": 95,
+      "emoji": "🍫",
+      "active": true
+    },
+    {
+      "id": "p5",
+      "name": "Papas preparadas",
+      "category": "Botanas",
+      "price": 65,
+      "emoji": "🍟",
+      "active": true
+    },
+    {
+      "id": "p6",
+      "name": "Chicharrones preparados",
+      "category": "Botanas",
+      "price": 70,
+      "emoji": "🌶️",
+      "active": true
+    },
+    {
+      "id": "p7",
+      "name": "Tostilocos",
+      "category": "Botanas",
+      "price": 80,
+      "emoji": "🥙",
+      "active": true
+    },
+    {
+      "id": "p8",
+      "name": "Manzana con chamoy",
+      "category": "Fruta",
+      "price": 55,
+      "emoji": "🍏",
+      "active": true
+    },
+    {
+      "id": "p9",
+      "name": "Malteada de fresa",
+      "category": "Bebidas",
+      "price": 68,
+      "emoji": "🥤",
+      "active": true
+    },
+    {
+      "id": "p10",
+      "name": "Agua fresca",
+      "category": "Bebidas",
+      "price": 35,
+      "emoji": "🧃",
+      "active": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "e7337765-8a98-4d43-a9a3-a732c374ffca",
+      "folio": 2,
+      "createdAt": "2026-11-09T06:04:41.866Z",
+      "customer": "villa",
+      "notes": "",
+      "items": [
+        {
+          "id": "p1",
+          "name": "Fresas con crema",
+          "qty": 1,
+          "price": 85,
+          "subtotal": 85
+        }
+      ],
+      "total": 85,
+      "paymentMethod": "Efectivo",
+      "paymentStatus": "Pagado",
+      "received": 100,
+      "change": 15,
+      "status": "Pendiente"
+    },
+    {
+      "id": "c0f1b3be-f32e-4879-9f2c-d5b765e8c832",
+      "folio": 1,
+      "createdAt": "2026-11-09T06:04:01.839Z",
+      "customer": "francisco villa",
+      "notes": "",
+      "items": [
+        {
+          "id": "p1",
+          "name": "Fresas con crema",
+          "qty": 1,
+          "price": 85,
+          "subtotal": 85
+        },
+        {
+          "id": "p6",
+          "name": "Chicharrones preparados",
+          "qty": 1,
+          "price": 70,
+          "subtotal": 70
+        },
+        {
+          "id": "p7",
+          "name": "Tostilocos",
+          "qty": 1,
+          "price": 80,
+          "subtotal": 80
+        },
+        {
+          "id": "p10",
+          "name": "Agua fresca",
+          "qty": 1,
+          "price": 35,
+          "subtotal": 35
+        }
+      ],
+      "total": 270,
+      "paymentMethod": "Efectivo",
+      "paymentStatus": "Pagado",
+      "received": 500,
+      "change": 230,
+      "status": "Listo"
+    }
+  ]
+}

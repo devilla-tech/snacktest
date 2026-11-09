@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dulce Rosa | Caja</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+
+<body data-page="caja">
+
+<header>
+  <h1>🍓 Dulce Rosa <span class="sub">| Punto de venta</span></h1>
+  <nav class="links">
+    <a class="active" href="/caja.html">🧾 Caja</a>
+    <a href="/cocina.html">👩‍🍳 Cocina</a>
+    <a href="/admin.html">📊 Administrador</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <h2>Caja · Nueva venta 💗</h2>
+    <p>Selecciona los productos, cobra y envía el pedido a cocina.</p>
+  </section>
+
+  <div class="layout">
+
+    <section>
+      <input id="search" class="search"
+        placeholder="🔎 Buscar fresas, papas, postres...">
+
+      <div id="chips" class="chips"></div>
+      <div id="products" class="products"></div>
+    </section>
+
+    <aside class="card">
+      <h2>🛍️ Pedido actual</h2>
+
+      <div id="cart"></div>
+
+      <div class="total">
+        <span>Total</span>
+        <strong id="total">$0.00</strong>
+      </div>
+
+      <label for="customer">Nombre del cliente</label>
+      <input id="customer" placeholder="Cliente mostrador">
+
+      <label for="method">Método de pago</label>
+      <select id="method">
+        <option>Efectivo</option>
+        <option>Transferencia</option>
+        <option>Tarjeta</option>
+      </select>
+
+      <div id="cashFields">
+        <label for="received">Efectivo recibido</label>
+        <input id="received" type="number"
+          min="0" step="0.01" placeholder="0.00">
+
+        <div class="total">
+          <span>Cambio</span>
+          <strong id="change">$0.00</strong>
+        </div>
+      </div>
+
+      <label for="notes">Indicaciones para cocina</label>
+      <textarea id="notes" rows="3"
+        placeholder="Sin chile, extra lechera..."></textarea>
+
+      <button id="checkout" class="btn full">
+        ✅ Cobrar y enviar a cocina
+      </button>
+
+      <p class="small">
+        El pago se registra manualmente.
+        Esta demo no procesa pagos bancarios.
+      </p>
+    </aside>
+
+  </div>
+</main>
+
+<div id="toast" class="toast"></div>
+
+</body>
+</html>

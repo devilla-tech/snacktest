@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dulce Rosa | Cocina</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+
+<body data-page="cocina">
+
+<header>
+  <h1>👩‍🍳 Dulce Rosa <span class="sub">| Cocina</span></h1>
+
+  <nav class="links">
+    <a href="/caja.html">🧾 Caja</a>
+    <a class="active" href="/cocina.html">👩‍🍳 Cocina</a>
+    <a href="/admin.html">📊 Administrador</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <h2>Pedidos para preparar 🍓</h2>
+    <p>
+      Los pedidos nuevos aparecen automáticamente
+      cuando la cajera registra una venta.
+    </p>
+  </section>
+
+  <div class="card row">
+    <div>
+      <b>
+        Pedidos nuevos:
+        <span id="pending">0</span>
+      </b>
+
+      <div class="small">
+        Cambia el estado de cada pedido
+        conforme se vaya preparando.
+      </div>
+    </div>
+
+    <span class="pill">● Pedidos en vivo</span>
+  </div>
+
+  <div id="orders" class="orders"></div>
+
+</main>
+
+<div id="toast" class="toast"></div>
+
+</body>
+</html>
